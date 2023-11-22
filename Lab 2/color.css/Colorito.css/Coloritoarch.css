@@ -1,0 +1,38 @@
+body
+{
+background-color: skyblue;
+color: black;
+font-family: 'Shippori Mincho', serif;
+}
+
+li, ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* selector avanzado: padre > hijo */
+.navbar > li{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* barra de navegacion */
+.navbar > li:hover{
+    background-color:rgb(145, 183, 255);
+}
+
+/* eliminamos los valores por defecto de la etiqueta <a> */
+a{
+    text-decoration: none;
+    color: black;
+} 
